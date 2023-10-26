@@ -22,7 +22,12 @@ class _HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: appMenuItems.length,
-      itemBuilder: (context, index) => const Text('Hola Mundo'),
+      itemBuilder: menuList,
     );
+  }
+
+  Widget menuList(BuildContext context, int index) {
+    final menuItem = appMenuItems[index];
+    return Text(menuItem.title);
   }
 }
