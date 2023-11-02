@@ -27,4 +27,4 @@ class AppTheme {
     //   centerTitle: true
     // )
   );
-} 
+}

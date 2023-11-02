@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../../../config/menu/menu_items.dart';
+import 'package:halloween/config/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String screenName = 'home_screen';
