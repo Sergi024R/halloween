@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:halloween/presentation/screens/buttons/buttons_screen.dart';
-import 'package:halloween/presentation/screens/cards/cards_screen.dart';
-import 'package:halloween/presentation/screens/home/home_screen.dart';
+import 'package:halloween/screens/buttons/buttons_screen.dart';
+import 'package:halloween/screens/cards/cards_screen.dart';
+import 'package:halloween/screens/home/home_screen.dart';
+
 
 
 final GoRouter appRouter = GoRouter(
