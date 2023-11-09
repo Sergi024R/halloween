@@ -31,7 +31,7 @@ class _ButtonsView extends StatelessWidget {
     return SizedBox(
         width: double.infinity,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           child: Wrap(
             spacing: 10,
             alignment: WrapAlignment.center,

@@ -4,7 +4,6 @@ import 'package:halloween/config/theme/app_theme.dart';
 
 void main() {
   runApp(const MainApp());
-  
 }
 
 class MainApp extends StatelessWidget {
