@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:halloween/config/router/app_router.dart';
-import 'package:halloween/config/theme/app_theme.dart';
+import 'config/router/app_router.dart';
+import 'config/theme/app_theme.dart';
+
 
 void main() {
   runApp(const MainApp());
+  
 }
 
 class MainApp extends StatelessWidget {

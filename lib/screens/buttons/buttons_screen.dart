@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:halloween/presentation/widgets/custom_button.dart';
+import '../../presentation/widgets/custom_button.dart';
 
 class ButtonsScreen extends StatelessWidget {
   static const String screenName = 'button_screen';
@@ -11,6 +11,8 @@ class ButtonsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Buttons Screen'),
+        automaticallyImplyLeading:
+            false, // Establece esto en false para ocultar el botón de retorno
       ),
       body: const _ButtonsView(),
       floatingActionButton: FloatingActionButton(
@@ -31,7 +33,7 @@ class _ButtonsView extends StatelessWidget {
     return SizedBox(
         width: double.infinity,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
           child: Wrap(
             spacing: 10,
             alignment: WrapAlignment.center,

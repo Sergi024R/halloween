@@ -30,7 +30,7 @@ class CardsScreen extends StatelessWidget {
                 _CardType3(label: card['label'], elevation: card['elevation'])),
             ...cards.map((card) =>
                 _CardType4(label: card['label'], elevation: card['elevation'])),
-            ...cards.map((card) =>
+                 ...cards.map((card) =>
                 _CardType5(label: card['label'], elevation: card['elevation'])),
             const SizedBox(height: 50)
           ],
@@ -159,6 +159,7 @@ class _CardType4 extends StatelessWidget {
   }
 }
 
+
 class _CardType5 extends StatelessWidget {
   final String label;
   final double elevation;
@@ -177,13 +178,14 @@ class _CardType5 extends StatelessWidget {
           Align(
               alignment: Alignment.topRight,
               child: Container(
-                decoration: const BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:
-                        BorderRadius.only(bottomLeft: Radius.circular(20))),
+                decoration:  const BoxDecoration(
+                  color:Colors.white,
+                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20))
+                ),
                 child: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.more_vert_outlined)),
+                  onPressed: () {},
+                  icon: const Icon(Icons.more_vert_outlined)
+                ),
               )),
         ],
       ),

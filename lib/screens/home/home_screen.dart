@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:halloween/config/menu/menu_items.dart';
+import '../../config/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String screenName = 'home_screen';
@@ -40,9 +40,7 @@ class _CustomListTitle extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-        //context.go(menuItem.link);
-        //context.push(menuItem.link);
-        context.pushNamed(menuItem.screenName);
+        context.push(menuItem.link);
       },
     );
   }
