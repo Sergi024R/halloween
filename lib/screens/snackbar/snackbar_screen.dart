@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
-import '../../presentation/appBars/app_bar_custom.dart';
-import '../../presentation/snackbars/snack_bar_custom.dart';
+import 'package:halloween/presentation/widgets/appBars/app_bar_custom.dart';
+import 'package:halloween/presentation/widgets/snackbars/snack_bar_custom.dart';
 
 class SnackBarScreen extends StatelessWidget
     with AppBarCustom, CustomSnackBars {
@@ -15,7 +14,7 @@ class SnackBarScreen extends StatelessWidget
       appBar: appBarWithReturnButton(title: 'Snackbars y Diálogos'),
       floatingActionButton: FloatingActionButton.extended(
           onPressed: () => toShowSnackBarCustom(context,
-              snackBarContent: const Text('Hola Ramon')),
+              snackBarContent: const Text('Hola REYES')),
           label: const Text('Mostrar SnackBar'),
           icon: const Icon(Icons.remove_red_eye_outlined)),
       body: const Center(child: _ShowButtonsList()),

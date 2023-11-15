@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_app/presentation/widgets/widgets.dart';
+import 'package:halloween/presentation/widgets/appBars/app_bar_custom.dart';
+import 'package:halloween/presentation/widgets/buttons/custom_button.dart';
+import '../../presentation/widgets/buttons/button_return_page.dart';
 
 class ButtonsScreen extends StatelessWidget with AppBarCustom {
   static const String screenName = 'button_screen';

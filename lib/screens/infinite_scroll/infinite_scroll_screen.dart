@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_app/presentation/widgets/appBars/app_bar_custom.dart';
+import 'package:halloween/presentation/widgets/appBars/app_bar_custom.dart';
 
 class InfiniteScrollScreen extends StatelessWidget with AppBarCustom{
   static const name = 'tutorial_screen';
