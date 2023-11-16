@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:halloween/screens/animated/animated_screen.dart';
-import '../../screens/buttons/buttons_screen.dart';
-import '../../screens/cards/cards_screen.dart';
-import '../../screens/home/home_screen.dart';
-import '../../screens/progress/progress_screen.dart';
-import '../../screens/snackbar/snackbar_screen.dart';
+import 'package:widgets_app/screens/screens.dart';
 
 final List<RouteBase> routes = [
   GoRoute(
@@ -38,8 +33,23 @@ final List<RouteBase> routes = [
   ),
   GoRoute(
     path: '/animated',
-    name: AnimatedScreen.name,
+    name: AnimatedScreen.screenName,
     builder: (BuildContext context, GoRouterState state) =>
         const AnimatedScreen(),
+  ),
+  GoRoute(
+    path: '/ui-controls',
+    name: UiControlsScreen.screenName,
+    builder: (context, state) => const UiControlsScreen(),
+  ),
+  GoRoute(
+    path: '/tutorial',
+    name: AppTutorialScreen.screenName,
+    builder: (context, state) => const AppTutorialScreen(),
+  ),
+  GoRoute(
+    path: '/infinite',
+    name: InfiniteScrollScreen.screenName,
+    builder: (context, state) => const InfiniteScrollScreen(),
   ),
 ];

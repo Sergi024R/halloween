@@ -1,10 +1,9 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:halloween/presentation/widgets/appBars/app_bar_custom.dart';
+import 'dart:math' show Random;
+import 'package:widgets_app/presentation/widgets/widgets.dart';
 
 class AnimatedScreen extends StatefulWidget {
-  static const name = 'animated_screen';
+  static const screenName = 'animated_screen';
   const AnimatedScreen({super.key});
 
   @override

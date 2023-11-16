@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:halloween/presentation/widgets/appBars/app_bar_custom.dart';
+import 'package:widgets_app/presentation/widgets/appBars/app_bar_custom.dart';
 
 const cards = <Map<String, dynamic>>[
   {'elevation': 0.0, 'label': 'Elevation 0'},
