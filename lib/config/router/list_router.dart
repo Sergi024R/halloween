@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/screens/screens.dart';
 
-import '../../screens/counter/counter_screen.dart';
-import '../../screens/theme_changer/theme_changer_screen.dart';
-
 final List<RouteBase> routes = [
   GoRoute(
     path: '/',
@@ -55,7 +52,7 @@ final List<RouteBase> routes = [
     name: InfiniteScrollScreen.screenName,
     builder: (context, state) => const InfiniteScrollScreen(),
   ),
-   GoRoute(
+  GoRoute(
     path: '/counter-river',
     name: CounterScreen.name,
     builder: (context, state) => const CounterScreen(),

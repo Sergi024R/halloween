@@ -35,8 +35,8 @@ List<MenuItem> appMenuItems = <MenuItem>[
       link: '/snackbars',
       icon: Icons.info_outline),
   const MenuItem(
-      title: 'Animaciones',
-      subTitle: 'Mira como funciona',
+      title: 'snackbar y diálogos',
+      subTitle: 'Indicadores en pantalla',
       link: '/animated',
       icon: Icons.check_box_outline_blank_rounded),
   const MenuItem(
